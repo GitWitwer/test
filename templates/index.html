@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        body {
+            font-size: 1.75em;
+            text-align: center;
+            color: #f51a97;
+            background-color: #e1e8f0;
+             }
+           </style>
+    <title> </title>
+</head>
+<body>
+    Current temperature in {{weather.location}} is: {{weather.temp}}&deg;F with {{weather.hum}} humidty and wind {{weather.wind}} mph
+    <br />{{weather.message}}
+     <br /><div class="container" style="text-align: center;"><img src="{{url_for('static', filename=weather.image)}}" width="400" height= "200" ALT="image"></div>
+    Temperatura actual en {{weather.location}} is: {{weather.tempc}}&deg;C with {{weather.hum}} humidty and el vineto {{weather.wind}} mph
+    <br />{{weather.messagespanish}}
+</body>
+</html>
